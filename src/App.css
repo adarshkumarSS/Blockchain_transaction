@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #535353;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #727272;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Table styles */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* Spotify-like button styles */
+button:focus {
+  outline: none;
+}
+
+.rounded-full {
+  border-radius: 500px;
+}
+
+/* Hover effects */
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #1DB954, #3E2AD1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Storage circle animation */
+.storage-circle {
+  transition: stroke-dasharray 1s ease;
+}
+
+/* Chart animations */
+@keyframes growUp {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+.animate-growUp {
+  animation: growUp 1s ease-out;
+}
